@@ -1,10 +1,10 @@
-import { Heart, Users, Clock, ShieldCheck } from "lucide-react";
+import { Heart, Users, Clock, ShieldCheck, Store, Package } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "10,000+", label: "Happy Customers" },
+  { icon: Users, value: "500+", label: "Retail Partners" },
   { icon: Clock, value: "15+", label: "Years of Trust" },
-  { icon: Heart, value: "100%", label: "Satisfaction" },
-  { icon: ShieldCheck, value: "Premium", label: "Quality" },
+  { icon: Package, value: "Lakhs+", label: "Products Supplied" },
+  { icon: ShieldCheck, value: "100%", label: "Quality Assured" },
 ];
 
 const About = () => {
@@ -15,39 +15,57 @@ const About = () => {
           {/* Content */}
           <div className="animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-6">
-              Your Trusted Partner in <span className="text-gradient">Women's Comfort</span>
+              Your Trusted <span className="text-gradient">Wholesale Partner</span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Welcome to <strong className="text-foreground">Navkar Hosiery</strong> – Godhra's most trusted destination for ladies undergarments and readymade clothing. For over 15 years, we have been dedicated to providing women with comfortable, stylish, and high-quality innerwear and clothing.
+                Welcome to <strong className="text-foreground">Navkar Hosiery</strong> – Godhra's leading wholesale supplier of ladies undergarments and readymade clothing. For over 15 years, we have been the trusted partner for retailers, boutiques, and resellers across Gujarat.
               </p>
               <p>
-                We believe every woman deserves to feel confident and comfortable. That's why we carefully select each product, ensuring premium quality fabrics, perfect fits, and styles that make you feel beautiful.
+                Our commitment to <strong className="text-foreground">consistent quality, competitive pricing, and reliable availability</strong> has made us the preferred choice for businesses seeking premium women's innerwear and clothing stock.
               </p>
               <p>
-                Our knowledgeable and friendly staff is always ready to help you find exactly what you need, in a comfortable and respectful shopping environment. Visit our store at Municipal Shopping Centre, Godhra and experience the Navkar difference.
+                Whether you're a retail shop owner looking for bulk supply or an individual customer seeking quality products, we welcome you to experience the Navkar difference. Visit our store at Municipal Shopping Centre, Godhra.
               </p>
             </div>
 
             {/* Values */}
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <div className="flex items-start gap-3">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3 p-4 bg-card rounded-xl">
                 <div className="w-10 h-10 rounded-lg bg-rose-light flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-5 h-5 text-primary" />
+                  <Package className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm">Comfort First</h4>
-                  <p className="text-xs text-muted-foreground">Quality fabrics for all-day comfort</p>
+                  <h4 className="font-semibold text-sm">Wholesale Excellence</h4>
+                  <p className="text-xs text-muted-foreground">Bulk orders with competitive pricing and timely delivery</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 p-4 bg-card rounded-xl">
                 <div className="w-10 h-10 rounded-lg bg-lavender flex items-center justify-center flex-shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-lavender-dark" />
+                  <Store className="w-5 h-5 text-lavender-dark" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm">Hygiene & Privacy</h4>
-                  <p className="text-xs text-muted-foreground">Clean, respectful shopping experience</p>
+                  <h4 className="font-semibold text-sm">Retail Friendly</h4>
+                  <p className="text-xs text-muted-foreground">Walk-in customers welcome for single purchases</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-card rounded-xl">
+                <div className="w-10 h-10 rounded-lg bg-peach flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-5 h-5 text-rose-dark" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Quality First</h4>
+                  <p className="text-xs text-muted-foreground">Premium fabrics with consistent batch quality</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-card rounded-xl">
+                <div className="w-10 h-10 rounded-lg bg-cream-dark flex items-center justify-center flex-shrink-0">
+                  <ShieldCheck className="w-5 h-5 text-foreground" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-sm">Trusted Supply</h4>
+                  <p className="text-xs text-muted-foreground">Reliable partner for your business needs</p>
                 </div>
               </div>
             </div>

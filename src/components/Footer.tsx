@@ -1,17 +1,17 @@
-import { Heart, Instagram, Facebook, Phone, MapPin } from "lucide-react";
+import { Heart, Instagram, Facebook, Phone, MapPin, Package, ShoppingBag } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
-          <div>
+          <div className="md:col-span-1">
             <h3 className="text-2xl font-heading font-semibold mb-4">
               Navkar <span className="text-rose-light">Hosiery</span>
             </h3>
             <p className="text-background/70 text-sm mb-4">
-              Your trusted destination for premium ladies undergarments and readymade clothing in Godhra.
+              Godhra's trusted wholesale supplier of ladies undergarments and readymade clothing. Retail customers welcome.
             </p>
             <div className="flex gap-4">
               <a
@@ -41,6 +41,21 @@ const Footer = () => {
               <a href="#collections" className="block text-background/70 hover:text-background transition-colors text-sm">Collections</a>
               <a href="#about" className="block text-background/70 hover:text-background transition-colors text-sm">About Us</a>
               <a href="#contact" className="block text-background/70 hover:text-background transition-colors text-sm">Contact</a>
+            </nav>
+          </div>
+
+          {/* For Business */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4">For Business</h4>
+            <nav className="space-y-2">
+              <a href="#contact" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm">
+                <Package className="w-4 h-4" />
+                Wholesale Enquiry
+              </a>
+              <a href="#collections" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm">
+                <ShoppingBag className="w-4 h-4" />
+                Product Catalog
+              </a>
             </nav>
           </div>
 

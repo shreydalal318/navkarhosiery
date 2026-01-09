@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, Sparkles } from "lucide-react";
+import { MapPin, Sparkles, Store, Users } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -21,10 +21,10 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-4 py-16 md:py-24">
         <div className="max-w-2xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-light/80 text-rose-dark text-sm font-medium mb-6 animate-fade-in">
+          {/* Business Type Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose-light/80 text-rose-dark text-sm font-medium mb-4 animate-fade-in">
             <Sparkles className="w-4 h-4" />
-            Trusted by Women of Godhra
+            Trusted Wholesale Supplier • Also Available for Retail
           </div>
 
           {/* Headline */}
@@ -34,21 +34,33 @@ const Hero = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Discover premium quality ladies undergarments and readymade clothing 
-            that fits perfectly and feels amazing. Your comfort is our priority.
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            Premium quality ladies undergarments and readymade clothing at wholesale prices. 
+            Trusted by retailers, boutiques, and resellers across Gujarat.
           </p>
+
+          {/* Business Type Highlights */}
+          <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <div className="flex items-center gap-2 text-sm text-foreground/80">
+              <Users className="w-4 h-4 text-primary" />
+              <span>Wholesale & Bulk Orders</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-foreground/80">
+              <Store className="w-4 h-4 text-primary" />
+              <span>Retail Shopping Welcome</span>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <a href="#collections">
+            <a href="#contact">
               <Button variant="hero" size="xl" className="w-full sm:w-auto">
-                Explore Collection
+                Enquire for Wholesale
               </Button>
             </a>
-            <a href="#contact">
+            <a href="#collections">
               <Button variant="outline" size="xl" className="w-full sm:w-auto">
-                Visit Our Store
+                Visit Store for Retail
               </Button>
             </a>
           </div>

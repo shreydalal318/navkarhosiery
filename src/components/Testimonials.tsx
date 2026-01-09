@@ -2,21 +2,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Priya Sharma",
-    role: "Regular Customer",
-    content: "I've been shopping at Navkar Hosiery for 5 years. The quality of their undergarments is unmatched, and the staff always helps me find the perfect fit.",
+    name: "Rajesh Patel",
+    role: "Boutique Owner, Ahmedabad",
+    content: "We've been sourcing from Navkar Hosiery for 8 years. Their consistent quality and timely bulk deliveries have helped us build our customer trust. Best wholesale partner!",
     rating: 5,
   },
   {
-    name: "Meena Patel",
-    role: "Working Professional",
-    content: "Finally found a store that understands women's comfort. Their nightwear collection is so soft and elegant. Highly recommended!",
+    name: "Meena Shah",
+    role: "Retail Shop Owner, Vadodara",
+    content: "Excellent wholesale rates and the stock is always available. Their MOQ is reasonable and the product quality never disappoints. Highly recommended for retailers!",
     rating: 5,
   },
   {
     name: "Anita Desai",
-    role: "Happy Customer",
-    content: "Great variety, affordable prices, and excellent customer service. The staff is very helpful and respectful. Best hosiery store in Godhra!",
+    role: "Retail Customer, Godhra",
+    content: "Even as a retail customer, I love shopping here. Great variety, helpful staff, and premium quality at affordable prices. The staff is very respectful and helpful.",
     rating: 5,
   },
 ];
@@ -27,10 +27,10 @@ const Testimonials = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-4">
-            What Our <span className="text-gradient">Customers Say</span>
+            What Our <span className="text-gradient">Partners Say</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Don't just take our word for it - hear from the women who trust us for their comfort and style.
+            Trusted by retailers, boutique owners, and individual customers across Gujarat. Hear from our valued partners.
           </p>
         </div>
 

@@ -1,25 +1,35 @@
-import { Shield, Heart, Sparkles, Award } from "lucide-react";
+import { Shield, Heart, Sparkles, Award, Truck, Package } from "lucide-react";
 
 const features = [
   {
+    icon: Package,
+    title: "Bulk Supply Ready",
+    description: "Consistent stock availability for wholesale orders. Reliable supply for your retail business.",
+  },
+  {
     icon: Heart,
     title: "Premium Comfort",
-    description: "Soft, breathable fabrics that feel gentle against your skin all day long.",
+    description: "Soft, breathable fabrics that feel gentle against skin. Quality your customers will love.",
   },
   {
     icon: Sparkles,
-    title: "Perfect Fit",
-    description: "Wide range of sizes with expert fitting guidance for every body type.",
+    title: "Competitive Pricing",
+    description: "Best wholesale rates with volume discounts. Maximize your profit margins.",
+  },
+  {
+    icon: Truck,
+    title: "Timely Delivery",
+    description: "Reliable and on-time order fulfillment. Keep your store stocked without delays.",
   },
   {
     icon: Shield,
     title: "Quality Assured",
-    description: "Only the finest brands and materials, ensuring durability and comfort.",
+    description: "Only the finest brands and materials. Consistent quality across all batches.",
   },
   {
     icon: Award,
-    title: "Affordable Prices",
-    description: "Premium quality at prices that make you smile. Value for every rupee.",
+    title: "Trusted Partner",
+    description: "Supplying to retailers and resellers with consistent quality and timely availability.",
   },
 ];
 
@@ -29,14 +39,15 @@ const Features = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-4">
-            Why Women <span className="text-gradient">Trust Us</span>
+            Why Retailers <span className="text-gradient">Trust Us</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            For years, we've been the preferred choice for women seeking quality, comfort, and style.
+            Supplying to retailers and resellers with consistent quality and timely availability. 
+            Your trusted wholesale partner for ladies undergarments and clothing.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
