@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, Package, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const contactInfo = [
@@ -26,11 +26,58 @@ const Contact = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-4">
-            Visit <span className="text-gradient">Our Store</span>
+            Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We'd love to welcome you to our store. Come experience our collection in person and get personalized assistance from our friendly team.
+            Whether you're a retailer looking for bulk orders or a customer visiting for retail shopping, we're here to help.
           </p>
+        </div>
+
+        {/* Dual CTA Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="bg-gradient-to-br from-primary/10 to-rose-light p-6 rounded-2xl border-2 border-primary/20 animate-fade-in-up">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
+                <Package className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg">Wholesale Enquiry</h3>
+                <p className="text-sm text-muted-foreground">For retailers & bulk buyers</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-sm mb-4">
+              Get competitive wholesale pricing, MOQ details, and catalog for your retail business.
+            </p>
+            <a
+              href="https://wa.me/919876543210?text=Hi%20Navkar%20Hosiery%2C%20I%20am%20interested%20in%20wholesale%20enquiry%20for%20my%20retail%20business."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="hero" className="w-full">
+                Enquire for Wholesale
+              </Button>
+            </a>
+          </div>
+
+          <div className="bg-gradient-to-br from-lavender/30 to-cream p-6 rounded-2xl border-2 border-lavender/30 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl bg-lavender flex items-center justify-center">
+                <ShoppingBag className="w-6 h-6 text-lavender-dark" />
+              </div>
+              <div>
+                <h3 className="font-heading font-semibold text-lg">Retail Shopping</h3>
+                <p className="text-sm text-muted-foreground">For individual customers</p>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-sm mb-4">
+              Visit our store for single and small quantity purchases with personalized assistance.
+            </p>
+            <a href="tel:+919876543210">
+              <Button variant="outline" className="w-full">
+                Call for Store Visit
+              </Button>
+            </a>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -75,11 +122,11 @@ const Contact = () => {
               </div>
             ))}
 
-            {/* CTA */}
+            {/* WhatsApp CTA */}
             <div className="bg-gradient-to-r from-rose-light to-lavender p-6 rounded-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <h3 className="font-heading font-semibold text-lg mb-2">Have Questions?</h3>
+              <h3 className="font-heading font-semibold text-lg mb-2">Quick Enquiry on WhatsApp</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Send us a message on WhatsApp and we'll be happy to help you with any queries about our products.
+                Send us a message for wholesale pricing, MOQ details, or any product queries.
               </p>
               <a
                 href="https://wa.me/919876543210?text=Hi%20Navkar%20Hosiery%2C%20I%20have%20a%20query%20about%20your%20products."
