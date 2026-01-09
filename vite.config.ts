@@ -9,5 +9,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/navkarhosiery/', // repo name
+  base: '/', // repo name
 })
