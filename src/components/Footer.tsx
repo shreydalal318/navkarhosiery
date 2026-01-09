@@ -1,8 +1,6 @@
 import { Heart, Instagram, Facebook, Phone, MapPin, Package, ShoppingBag } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-background py-12">
+  return <footer className="bg-foreground text-background py-12">
       <div className="container px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -14,20 +12,10 @@ const Footer = () => {
               Godhra's trusted wholesale supplier of ladies undergarments and readymade clothing. Retail customers welcome.
             </p>
             <div className="flex gap-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              >
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-              >
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -63,8 +51,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
-              <a href="tel:+919876543210" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm">
-                <Phone className="w-4 h-4" />
+              <a href="tel:+919876543210" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors text-sm">+91 98253 18909<Phone className="w-4 h-4" />
                 +91 98765 43210
               </a>
               <div className="flex items-start gap-2 text-background/70 text-sm">
@@ -85,8 +72,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
