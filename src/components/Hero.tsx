@@ -28,10 +28,15 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold leading-tight mb-6 animate-fade-in-up">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold leading-tight mb-4 animate-fade-in-up">
+              Navkar Hosiery – Premium Ladies Undergarments in Godhra
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-heading font-medium mb-6 animate-fade-in-up">
             Comfort, Confidence & Style for{" "}
             <span className="text-gradient">Every Woman</span>
-          </h1>
+          </h2>
+
+
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
